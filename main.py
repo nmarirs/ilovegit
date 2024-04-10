@@ -10,6 +10,11 @@ class MyClient(discord.Client):
         print(f"Message from {message.author}: {message.content}")
         if "git" in message.content and not message.author.bot:
             await message.channel.send("Excuse me, would you like to hear about our lord and savior Git, the free and open source version control system? https://git-scm.com/")
+        elif "mercurial" in message.content:
+            await message.channel.send("Ewwwwwww blasphemy. Imagine being so dense")
+        elif "subversion" in message.content or "svn" in message.content:
+            await message.channel.send("Ratio this man. svn more like I'd rather jump off a cliff")
+
 
 
 intents = discord.Intents.default()
